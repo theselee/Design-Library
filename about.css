@@ -1,0 +1,50 @@
+body {
+  background-color: peachpuff;
+  font-family: "Kaushan Script";
+}
+
+h1 {
+  font-size: 125px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftside,
+.rightside {
+  width: 50%;
+}
+
+.leftside img {
+  width: 100%;
+}
+
+.rightside {
+  background-color: whitesmoke;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .main .leftside,
+  .main .rightside {
+    padding: 0px;
+    width: 100%;
+  }
+  .main .leftside img {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    font-size: 35px;
+  }
+}

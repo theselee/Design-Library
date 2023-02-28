@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  height: 60px;
+  background-color: #b6a497;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hb {
+  width: 50px;
+  padding: 10px;
+}
+.hb div {
+  border-bottom: solid 2px black;
+  height: 5px;
+}
+/* .left {
+} */
+
+.right {
+  padding: 10px;
+}
+
+.right a {
+  display: inline-block;
+  background-color: #f1e7e2;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  height: 400px;
+  width: 100%;
+  background-image: url("images/background.png");
+  background-position: 0px -40px;
+  padding: 30px;
+}
+.main-parent {
+  display: flex;
+  justify-content: center;
+}
+.main {
+  background-color: #edd3c1;
+  display: flex;
+  flex-direction: row;
+  max-width: 700px;
+}
+
+.main .left {
+  width: 50%;
+  padding: 30px;
+}
+
+.main .left button {
+  background-color: white;
+  border: none;
+}
+.main .left h1 {
+  font-size: 80px;
+  font-family: "Kaushan Script";
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.main .right {
+  width: 50%;
+  padding: 30px;
+}
+
+.main .right h2 {
+  font-size: 25px;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  text-align: center;
+}
+
+.main .right img {
+  max-width: 75px;
+}
+
+.search {
+  text-align: center;
+  background-color: white;
+  max-width: 500px;
+  margin: 10px auto;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+.search input {
+  width: 450px;
+  border: none;
+}
+
+.search img {
+  width: 20px;
+  margin-top: 5px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: auto;
+
+    display: block;
+    margin: 0px;
+  }
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+  nav .right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+  .main {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .main .left h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .main .left,
+  .main .right {
+    padding: 5px;
+    width: 100%;
+  }
+  header {
+    padding: 5px;
+    height: auto;
+  }
+  .search {
+    display: flex;
+    flex-direction: row;
+  }
+  .search input {
+    width: 100%;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: row;
+  }
+  .grid div {
+    width: 49%;
+    text-align: center;
+  }
+  .grid div img {
+    text-align: center;
+    margin: 0 auto;
+  }
+}

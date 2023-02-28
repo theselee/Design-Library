@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profile.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <div>
+      <h1>
+        My Profile
+        <img
+          class="question-mark"
+          src="./images/gold question mark icon.png"
+          alt="Gold Question Mark Icon"
+        />
+      </h1>
+
+      <p>Fill out your registration here.</p>
+    </div>
+    <div class="main">
+      <div class="leftside">
+        <h2>Contact Info</h2>
+        <div>
+          <!--secondary main (for contact stuff) opening div-->
+          <form action="Contact Info">
+            <fieldset>
+              <label for="">Title</label>
+              <select name="Title List" id="">
+                <option value="mr">Mr.</option>
+                <option value="mr">Ms.</option>
+                <option value="mr">Mrs.</option>
+                <option value="mr">Miss.</option>
+                <option value="mr">Dr.</option>
+                <option value="mr">Esq.</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <label for="">Name</label>
+              <input type="text" placeholder="Name" required />
+            </fieldset>
+            <fieldset>
+              <label for="">Username</label>
+              <input type="text" placeholder="Username" required />
+            </fieldset>
+            <fieldset>
+              <label for="D.O.B."> D.O.B.</label>
+              <input type="text" placeholder="D.O.B." required />
+            </fieldset>
+
+            <fieldset>
+              <label for="Email Address"> Email Address</label>
+              <input type="text" placeholder="Email Address" required />
+            </fieldset>
+
+            <fieldset>
+              <label for="Password">Password</label>
+              <input type="text" placeholder="Password" required />
+            </fieldset>
+            <fieldset>
+              <label for="Confirm Password">Confirm Password</label>
+              <input type="text" placeholder="Confirm Password" required />
+            </fieldset>
+            <div class="submitbutton">
+              <input type="submit" value="submit" />
+            </div>
+          </form>
+        </div>
+        <!--secondary main (for contact stuff) closing div-->
+      </div>
+      <!-- closing left side-->
+      <div class="rightside">
+        <h2>YOUR PICTURE</h2>
+        <div>
+          <img src="./images/user icon.png" alt="User Icon Photo" />
+        </div>
+        <div>
+          <!-- div for button-->
+
+          <button>UPLOAD</button>
+        </div>
+        <!-- div close for button-->
+      </div>
+    </div>
+    <!-- Closing Main Div-->
+  </body>
+</html>

@@ -1,0 +1,102 @@
+.leftside {
+  background-color: #bfbaba;
+  width: 30%;
+}
+
+.leftside fieldset {
+  border: none;
+}
+
+.rightside {
+  background-color: peachpuff;
+  width: 70%;
+  padding: 40px;
+}
+
+.rightside img.book-img {
+  height: 300px;
+}
+
+.rightside-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftside-top {
+  height: 50%;
+}
+.heart-icon .button {
+  width: 20px;
+  height: auto;
+}
+.main,
+.row {
+  display: flex;
+  flex-direction: row;
+  font-family: "Kaushan Script";
+}
+.space-between {
+  justify-content: space-between;
+}
+.col1 {
+  width: 10%;
+}
+.col2 {
+  width: 45%;
+}
+.col3 {
+  width: 45%;
+}
+
+.indent {
+  padding-left: 25px;
+}
+
+hr {
+  border-color: black;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 5px;
+}
+
+.linerow {
+  padding: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .main .leftside,
+  .main .rightside {
+    padding: 0px;
+    width: 100%;
+  }
+  .main .leftside img {
+    width: 100%;
+  }
+  h1,
+  p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .col1 {
+    width: 10%;
+  }
+  .col2 {
+    width: 90%;
+    text-align: center;
+  }
+  .col3 {
+    width: 100%;
+    text-align: center;
+  }
+}

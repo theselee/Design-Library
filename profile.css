@@ -1,0 +1,74 @@
+body {
+  background-color: #b6a497;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+.question-mark {
+  width: 25px;
+}
+
+.leftside {
+  width: 60%;
+
+  padding: 0px 58px 15px 0px; /*top right bottom left*/
+}
+.leftside h2 {
+  background-color: darkgrey;
+  margin: 0px;
+}
+.leftside > div {
+  /*The carrot means all first children that are div*/
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+.rightside {
+  width: 40%;
+  background-color: lightgrey;
+  text-align: center;
+  height: 250px;
+}
+.rightside > div {
+  background-color: lightgrey;
+  padding: 15px;
+}
+
+.rightside h2 {
+  background-color: darkgrey;
+  margin: 0px;
+}
+
+.rightside img {
+  width: 100px;
+}
+
+fieldset {
+  border: none;
+}
+
+label:before {
+  content: " *";
+  color: red;
+}
+
+.submitbutton {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  h1,
+  p {
+    text-align: center;
+  }
+}

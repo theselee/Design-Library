@@ -1,0 +1,68 @@
+body {
+  background-color: peachpuff;
+}
+
+.main,
+.everything-main {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.left,
+.leftside,
+.rightside,
+.right {
+  width: 50%;
+}
+
+.left img,
+.right img {
+  width: 100%;
+}
+
+.leftside > img {
+  height: 450px;
+}
+
+.rightside > img {
+  height: 400px;
+}
+.gray-box {
+  background-color: seashell;
+  padding: 10px;
+  height: 300px;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 10px;
+}
+
+.rightside {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main,
+  .everything-main {
+    flex-direction: column;
+  }
+  .rightside,
+  .leftside,
+  .left,
+  .right {
+    width: 100%;
+  }
+  .gray-box {
+    height: auto;
+  }
+}

@@ -1,0 +1,47 @@
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  background-image: url("./images/Library\ picture.jpeg");
+  font-size: 75px;
+  font-family: "Kaushan Script";
+  font-weight: 200;
+  width: 500px;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.main .submitbutton {
+  background-color: black;
+  color: white;
+  width: 50%;
+}
+
+input {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 5px;
+}
+
+textarea {
+  width: 100%;
+}
+
+form {
+  padding: 0px;
+  overflow: hidden;
+}
+
+body {
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding-top: 0px;
+  }
+}
