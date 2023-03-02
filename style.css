@@ -78,6 +78,10 @@ header {
   font-weight: 400;
   text-align: center;
 }
+.main .right .grid {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+}
 
 .main .right img {
   max-width: 75px;
@@ -149,10 +153,9 @@ header {
     width: 100%;
   }
   .grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 100px;
     gap: 5px;
-    flex-direction: row;
   }
   .grid div {
     width: 49%;
